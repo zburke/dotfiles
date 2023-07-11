@@ -14,11 +14,15 @@
 	br = branch
 	ci = commit
 	st = status
+	di = diff
+	dif = diff
 	unstage = reset HEAD --
 	pick = cherry-pick
+	px = cherry-pick -x
 	ll = log --color --graph --branches --abbrev-commit --date=format:'%Y-%m-%d %H:%M:%S'
 	sl = log --color --graph --branches --abbrev-commit --date=format:'%Y-%m-%d' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
 	lg = log --graph --decorate -30 --all --date-order --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(cyan)%h%Creset %C(black bold)%ad%Creset%C(auto)%d %s'
+	brd = diff --name-only master
 [credential]
 	helper = osxkeychain
 [commit]
