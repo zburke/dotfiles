@@ -19,9 +19,21 @@
 	unstage = reset HEAD --
 	pick = cherry-pick
 	px = cherry-pick -x
+
+	# long log with branches
 	ll = log --color --graph --branches --abbrev-commit --date=format:'%Y-%m-%d %H:%M:%S'
+
+	# short log with branches
 	sl = log --color --graph --branches --abbrev-commit --date=format:'%Y-%m-%d' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
+
+	# short log with branches
 	lg = log --graph --decorate -30 --all --date-order --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(cyan)%h%Creset %C(black bold)%ad%Creset%C(auto)%d %s'
+
+	# short log for the current branch
+	# efe87862 2023-06-28 14:54:24 -0400 mis306lu DE79433
+	ol = log --pretty=format:'%h %ad %an %s' --date=iso-local
+
+	# branch-diff: list locally modified files
 	brd = diff --name-only master
 [credential]
 	helper = osxkeychain
