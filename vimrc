@@ -66,3 +66,7 @@ fun CleanText()
 endfun
 map <F5> :call CleanText()<CR>
 
+" don't hang when reading typescript
+" thanks to https://vi.stackexchange.com/questions/25086/vim-hangs-when-i-open-a-typescript-file/28721#28721?newreg=b7e9e7a35a2e4ee8806d1900d1c07455
+set re=2
+
